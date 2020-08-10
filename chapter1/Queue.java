@@ -1,15 +1,9 @@
-
+package chapter1;
 
 public class Queue<Item> {
-    private Node first; // link to least recently added node. first是队列的底部
-    private Node last; // link to most recently added node. last是队列的顶部
+    private Node<Item> first; // link to least recently added node. first是队列的底部
+    private Node<Item> last; // link to most recently added node. last是队列的顶部
     private int N; // number of items on the queue
-
-    private class Node
-    { // nested class to define nodes
-        Item item;
-        Node next;
-    }
 
     public boolean isEmpty() 
     {
@@ -23,7 +17,7 @@ public class Queue<Item> {
 
     public void enqueue(Item item)
     { // Add item to the end of the list.
-        Node oldlast = last;
+        Node<Item> oldlast = last;
         last = new Node();
         last.item = item;
         last.next = null;

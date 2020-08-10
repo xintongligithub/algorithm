@@ -1,5 +1,5 @@
-import java.util.Iterator;
-//1.1
+package chapter1;
+
 //固定长度，数组堆栈。
 public class ResizingArrayStack<Item>
     {

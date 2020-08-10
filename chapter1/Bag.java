@@ -1,11 +1,7 @@
+package chapter1;
 
 public class Bag<Item> {
     private Node first; // first node in list
-    private class Node
-    {
-        Item item;
-        Node next;
-    }
 
     public void add(Item item)
     { // same as push() in Stack
